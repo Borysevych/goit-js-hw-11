@@ -1,0 +1,42 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & .photo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 250px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+    & .gallery-item {
+      max-width: 200px;
+
+
+      & img {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.info {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  color: #341e1e;
+
+  &__box {
+    max-width: 50px;
+    text-align: center;
+    line-height: 0.2em;
+    font-size: 0.6em;
+  }
+}
